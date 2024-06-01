@@ -7,7 +7,19 @@ body {
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.11' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   color: whitesmoke;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Bebas Neue";
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -37,17 +49,24 @@ body {
   padding: 10px;
   position: fixed;
   visibility: visible;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav-item {
   margin: 10px;
 }
+
 .navbar .navbar-nav .nav-link {
   color: whitesmoke;
   text-shadow: 1px 1px 5px black;
   transition: color 0.3s ease;
+  font-size: 22px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -61,28 +80,158 @@ body {
 
 .navbar-nav .nav-item .dropdown-menu .dropdown-item {
   color: whitesmoke;
+  font-size: 20px;
 }
 
-.navbar-nav .nav-item .dropdown-menu{
+.navbar-nav .nav-item .dropdown-menu {
   background-color: rgb(0, 0, 0);
 }
 
 .navbar-nav .nav-item .btn-login {
-    color: #fff;
-    border-radius: 1px;
-    white-space: nowrap;
-    transition: 0.3s;
-    font-size: 16px;
-    display: inline-block;
-    border: 1px solid #ffffff;
-    padding: 7px 20px 7px 20px;
-  }
-  
-  .navbar-nav .nav-item .btn-login:hover {
-    border: 1px solid#da1e17;
-    color: #da1e17;
+  color: #fff;
+  border-radius: 1px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 7px 20px 7px 20px;
 }
 
+.navbar-nav .nav-item .btn-login:hover {
+  border: 1px solid #da1e17;
+  color: #da1e17;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #da1e17;
+  padding: 0 0 7px 0;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Bebas Neue";
+}
+
+#footer .footer-top {
+  background-image: url(image/footer-bg.png);
+  border-bottom: 1px solid #222222;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h4 {
+  font-size: 25px;
+  margin: 0 0 0 0;
+  padding: 2px 0 2px 0;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #da1e17;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: "Oswald";
+  font-weight: 300;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #292929;
+  color: #fff;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #da1e17;
+  color: #151515;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #da1e17;
+  cursor: pointer;
+}
+
+#footer .copyright {
+  font-size: 17px;
+  text-align: center;
+  padding: 7px 0 0px 0;
+  letter-spacing: 1px;
+}
+
+#footer .footer-info .btn-danger {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#footer .footer-links .nav-item{
+  padding: 0;
+  margin: 0px;
+}
+
+
+#footer .nav-item .dropdown-menu {
+  background-color: rgb(0, 0, 0);
+}
 /*--------------------------------------------------------------
 # (index) HERO SECTION
 --------------------------------------------------------------*/
@@ -142,8 +291,9 @@ body {
   color: whitesmoke;
   background-color: #da1e17;
   padding: 10px 30px 10px 30px;
-  width: auto;
+  /* width: auto; */
   letter-spacing: 2px;
+  font-size: 18px;
 }
 
 .btn-danger:hover {
@@ -188,18 +338,11 @@ body {
   max-height: 80vh;
 }
 
-#prev-icon {
+#prev-icon, #next-icon {
   color: #da1e17;
 }
 
-#prev-icon:hover{
-  color: #ffffff;
-}
-
-#next-icon {
-  color: #da1e17;
-}
-
+#prev-icon:hover,
 #next-icon:hover{
   color: #ffffff;
 }
@@ -343,19 +486,6 @@ body {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #038222;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #038222;
-}
-
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -368,16 +498,22 @@ body {
 
 .custom-select {
   background-color: black;
-  color: white;
+  color: #ffffff;
   border: 1px solid #363535;
 }
+
 .custom-select option {
   background-color: black;
-  color: white;
+  color: #ffffff;
+}
+
+.custom-select option:focus {
+  background-color: #ffffff;
+  color: #da1e17;
 }
 
 .custom-select:focus {
-  color: white;
+  color: #ffffff;
   background-color: black;
   border-color: #da1e17;
 }

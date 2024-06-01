@@ -2,20 +2,16 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/538907d71c.js" crossorigin="anonymous"></script>
-    <script defer src="carousel.js"></script>
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="image/toxzlogo.png">
   </head>
 
   <body>
     <?php
     session_start();
-    include "navbar.php";
+    include 'header.php';
     ?>
+
     <!-- START OF HERO -->
     <section id="hero" class="d-flex align-items-center justify-content-center">
       <div class="container" data-aos="fade-up">
@@ -33,7 +29,6 @@
   <!-- END OF HERO -->
     
   <!-- START OF GALLERY -->
-
   <div class="section-title">
     <h2>TATTOO</h2>
   </div>
@@ -123,12 +118,10 @@
       <button class="btn btn-danger" onclick="window.location.href = 'piercing.php';">SEE FULL GALLERY</button>
     </div>
   </div>
-    
-    
-    
   <!-- END OF GALLERY -->
-
-
+  <?php
+    include 'footer.php';
+  ?>
 
  
 
