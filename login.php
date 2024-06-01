@@ -35,6 +35,7 @@
 				<a href="registration.php" class="link-secondary">Sign Up</a>
 			</form>
 		</div>
+		<button onclick="topFunction()" id="back-to-top" title="Go to top">Top</button>
         <?php
         include 'footer.php';
         ?>

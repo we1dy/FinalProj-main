@@ -65,6 +65,7 @@
 			<a href="login.php" class="link-secondary">Login</a>
 		</form>
 	</div>
+	<button onclick="topFunction()" id="back-to-top" title="Go to top">Top</button>
     <?php
     include 'footer.php';
     ?>

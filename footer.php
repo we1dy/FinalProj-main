@@ -71,4 +71,6 @@
       </div>
     </div>
   </footer>
+
+  <script src="main.js"></script>
    <!-- END OF FOOTER -->

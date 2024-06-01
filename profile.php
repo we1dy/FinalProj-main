@@ -111,6 +111,7 @@ isset($_SESSION['contactNum'])) {
 		  	</ul>"; ?>
 
 		</div>
+		<button onclick="topFunction()" id="back-to-top" title="Go to top">Top</button>
         <?php
         include 'footer.php';
         ?>

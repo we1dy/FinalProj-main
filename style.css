@@ -104,7 +104,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Footer
+# FOOTER
 --------------------------------------------------------------*/
 #footer {
   background: #da1e17;
@@ -232,6 +232,36 @@ body {
 #footer .nav-item .dropdown-menu {
   background-color: rgb(0, 0, 0);
 }
+
+
+/*--------------------------------------------------------------
+# BACK TO TOP
+--------------------------------------------------------------*/
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border: #da1e17;
+  box-shadow: 0px 0px 10px #000000;
+  font-size: 15px;
+}
+
+#back-to-top:hover {
+  background-color: #ffffff;
+  color: #da1e17;
+  border: px solid #da1e17;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
 /*--------------------------------------------------------------
 # (index) HERO SECTION
 --------------------------------------------------------------*/
@@ -246,7 +276,7 @@ body {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: #00000099;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -302,12 +332,69 @@ body {
   box-shadow: 0 0 10px #ffffff, 0 0 13px #ffffff;
 }
 
+/*--------------------------------------------------------------
+# (index) VISIT US
+--------------------------------------------------------------*/
+.visit-us {
+  margin: 120px 0 90px;
+  background-color: #da1e17;
+  padding: 25px 10px 40px;
+}
+
+.visit-us .section-title h2{
+  margin: 0 0 30px 0;
+  font-size: 80px;
+  text-shadow: 0 0 10px #00000071;
+}
+
+.visit-us .info {
+  width: 100%;
+}
+
+.visit-us .info h4 {
+  padding: 0 0 0 70px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.visit-us .info i {
+  font-size: 20px;
+  background: #292929;
+  color: #ffffff;
+  float: left;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.visit-us .info p {
+  padding: 0 0 0 70px;
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Oswald";
+}
+
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*--------------------------------------------------------------
 # (index) GALLERY CAROUSEL
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# IN PROGRESS ! ! ! ! ! ! ! ! ! ! ! !!  ! !
 --------------------------------------------------------------*/
 .section-title h2 {
   margin: 80px 0 50px 0;
@@ -347,14 +434,77 @@ body {
   color: #ffffff;
 }
 
+/*--------------------------------------------------------------
+# (index) SERVICES
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  padding: 80px 30px;
+  transition: all ease-in-out 0.3s;
+  background: #292929;
+  border: 2px solid #363636;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  background: #da1e17;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.services .icon-box .icon img {
+  width: 35px;
+  transition: ease-in-out 0.3s;
+  filter: invert(1);
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.services .icon-box h4 a {
+  color: #ffffff;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box h4 a:hover {
+  text-shadow: 0 0 10px #da1e17, 0 0 13px #da1e17;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: "Oswald";
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(255, 255, 255, 0.555);
+  transform: translateY(-10px);
+}
+
+.services .section-title {
+  margin-bottom: 0px;
+}
+
 
 /*--------------------------------------------------------------
 # APPOINTMENT
 --------------------------------------------------------------*/
 #contact {
-  padding-top: 5%;
+  padding-top: 8%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   background: url("image/bg.png") top center;
   background-size: cover;
   position: relative;
@@ -376,8 +526,8 @@ body {
   /* padding-top: 74px; */
 }
 
-.container .section-title {
-  margin: 0;
+.contact .container img{
+  margin-bottom: 30px;
 }
 
 .contact .info {
@@ -405,17 +555,18 @@ body {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
   margin-bottom: 5px;
   color: #ffffff;
+  letter-spacing: 1px;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
+  font-family: "Oswald";
 }
 
 .contact .info .social-links {
